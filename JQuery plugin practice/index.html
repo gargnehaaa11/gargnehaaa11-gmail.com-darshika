@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="3D carousel, 3d slider, jquery carousel, carousel, jquery carousel plugin, carousel slider">
+    <meta name="description" content="jQuery plugin that lets you create beautiful responsive 3D carousel slider.">
+    <meta name="author" content="Parth Jasani">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jas-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jas-carousel.js"></script>
+    <title>Sarthak's Birthday</title>
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.6.3.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+
+    <style>
+
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    body{
+         /* background: url("../img1/img-6.jpg");  */
+         background: url("../img1/darshika/bday.jpg");
+        background-size: cover;
+    }
+    .next{
+        color: red;
+    font-weight: bold;
+    }
+   .prev{
+       color: red;
+       font-weight: bold;
+      
+   }
+   .vd1{
+       margin-left: 50px;
+       width: 350px;
+   }
+    </style>
+</head>
+<body>
+<a href="../index.html" class="btn btn-light">Home</a>
+<main>
+
+    <div class="container cf">
+        <div class="slider-main">
+            <ul class="slider">
+                <li> <img src="../img1/darshika/img4.JPG" /></li>
+                <li> <img src="../img1/darshika/img3.JPG" /></li>
+                <li> <img src="../img1/darshika/img2.JPG" /></li>
+                <li> <img src="../img1/darshika/img1.JPG" /></li>
+                <li> <img src="../img1/darshika/img5.JPG" /></li>
+                <li> <img src="../img1/darshika/img6.JPG" /></li>
+                <li> <img src="../img1/darshika/img7.JPG" /></li>
+                <li> <img src="../img1/darshika/img8.JPG" /></li>
+                <li> <img src="../img1/darshika/img9.JPG" /></li>
+                <li> <img src="../img1/darshika/img10.JPG" /></li>
+                <li> <img src="../img1/darshika/img11.JPG" /></li>
+                <li> <img src="../img1/darshika/img12.JPG" /></li>
+                <li> <img src="../img1/darshika/img13.JPG" /></li>
+                <li> <img src="../img1/darshika/img14.JPG" /></li>
+                <li> <img src="../img1/darshika/img15.JPG" /></li>
+                <li> <img src="../img1/darshika/img1.JPG" /></li>
+                <li> <img src="../img1/darshika/img4.JPG" /></li>
+                <li> <img src="../img1/darshika/img3.JPG" /></li>
+                <li> <img src="../img1/darshika/img2.JPG" /></li>
+                <li> <img src="../img1/darshika/img1.JPG" /></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <h2>Audio Player</h2>
+    <div>
+        <audio class="vd1" controls autoplay>
+
+            <source src="../img1/darshika/09 Dil hai chhota sa.ogg" type="audio/ogg">
+            <source src="../img1/darshika/09 Dil hai chhota sa.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+        </audio>
+   
+</div>
+
+<h2>Video Player</h2>
+<div>
+    <video controls class="vd1">
+        <source src="../img1/darshika/Chanda Chamke - Full Song _ Fanaa _ Aamir Khan _ Kajol _ Kids Song (1).mp4" type="video/mp4">
+    </video>
+</div>
+</main>
+
+
+<script>
+    $(document).ready(function() {
+        $(".slider").jasCarousel({
+            margin: 20,
+            auto: true,
+            speed: 800,
+            delay: 2000,
+            slideFrontFace: false,
+            moveOnSlideClick: true,
+        })
+    })
+   
+</script>
+
+</body>
+</html>
